@@ -1,0 +1,9 @@
+#!/bin/bash
+
+if [[ "$DOCKER_TAG" == "latest" ]]; then
+  BUILD_ARGS=""
+else
+  BUILD_ARGS="--build-arg UNIFI_VERSION=$DOCKER_TAG"
+fi
+
+docker build $BUILD_ARGS -f $DOCKERFILE_PATH -t $IMAGE_NAME .
