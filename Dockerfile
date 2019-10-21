@@ -4,8 +4,7 @@ LABEL description="Dockerised UniFi Network Controller (CentOS 7)"
 
 ARG UNIFI_VERSION=5.11.50
 ARG UNIFI_URL=https://dl.ubnt.com/unifi/$UNIFI_VERSION/UniFi.unix.zip
-ARG DEST_DIR=/opt
-ARG UNIFI_DIR=$DEST_DIR/UniFi
+ARG UNIFI_DIR=/UniFi
 ARG USER=unifi
 
 ADD files/mongodb.repo /etc/yum.repos.d/
@@ -17,7 +16,7 @@ RUN useradd -m $USER \
     mongodb-org-server \
     unzip \
  && yum clean all \
- && unzip /tmp/UniFi.unix.zip -d $DEST_DIR/ \
+ && unzip /tmp/UniFi.unix.zip -d / \
  && mkdir $UNIFI_DIR/data \
  && chown -R $USER:$USER $UNIFI_DIR \
  && rm -rf /tmp/*

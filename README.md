@@ -4,7 +4,7 @@ The Docker images can be found in [the public repository on Docker Hub](https://
 
 ## Quick Start Guide
 The Docker Compose setup mounts the local `./data` directory on the host to
-`/opt/UniFi/data` in the container. This directory holds the Controller's
+`/UniFi/data` in the container. This directory holds the Controller's
 configuration, database, logs etc. You can either use an existing folder from
 the previous installation or create an empty directory if you want to start
 from scratch.
@@ -27,5 +27,5 @@ docker-compose up -d
 ### Docker
 Alternatively you can start the container by running:
 ```
-docker run -d -v /path/to/data:/opt/UniFi/data peterpakos/unifi-network-controller
+docker run -d -v /path/to/data:/UniFi/data peterpakos/unifi-network-controller
 ```
