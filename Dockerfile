@@ -2,7 +2,7 @@ FROM centos:7
 LABEL maintainer="Peter Pakos <peter@pakos.uk>"
 LABEL description="Dockerised UniFi Network Controller (CentOS 7)"
 
-ARG UNIFI_VERSION=5.12.22
+ARG UNIFI_VERSION=5.12.35
 ARG UNIFI_URL=https://dl.ubnt.com/unifi/$UNIFI_VERSION/UniFi.unix.zip
 ARG UNIFI_DIR=/UniFi
 ARG USER=unifi
