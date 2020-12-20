@@ -1,11 +1,11 @@
-# Dockerised UniFi Network Controller (CentOS 7)
+# Dockerised UniFi Network Controller (CentOS 8)
 
 The Docker images can be found in [the public repository on Docker Hub](https://hub.docker.com/r/peterpakos/unifi-network-controller).
 
 ## Quick Start Guide
 The Docker Compose setup mounts the local `./data` directory on the host to
 `/UniFi/data` in the container. This directory holds the Controller's
-configuration, database, logs etc. You can either use an existing folder from
+configuration, database etc. You can either use an existing folder from
 the previous installation or create an empty directory if you want to start
 from scratch.
 
