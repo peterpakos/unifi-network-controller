@@ -1,4 +1,4 @@
-# Dockerised UniFi Network Controller (CentOS 8)
+# Dockerised UniFi Network Controller (Ubuntu 18.04)
 
 The Docker images can be found in [the public repository on Docker Hub](https://hub.docker.com/r/peterpakos/unifi-network-controller).
 
