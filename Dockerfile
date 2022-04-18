@@ -1,13 +1,13 @@
 FROM ubuntu:18.04
 LABEL maintainer="Peter Pakos <peter@pakos.uk>"
-LABEL description="Dockerised UniFi Network Controller (Ubuntu 20.04)"
+LABEL description="Dockerised UniFi Network Controller (Ubuntu 18.04)"
 
 ARG DEBIAN_FRONTEND=noninteractive
 
 ARG USER=admin
 ARG UID=1024
 ARG GID=100
-ARG UNIFI_VERSION=6.1.71
+ARG UNIFI_VERSION=7.0.25
 ARG UNIFI_URL=https://dl.ubnt.com/unifi/$UNIFI_VERSION/UniFi.unix.zip
 ARG UNIFI_DIR=/UniFi
 
